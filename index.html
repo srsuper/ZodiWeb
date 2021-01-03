@@ -248,7 +248,7 @@
 						<div class="col">
 							<h3>Booking</h3>
 							<ul class="alt">
-								<form  id="test-form" method="POST" 
+								<form  onsubmit="onFormSubmit()" method="POST" 
 								
 									<div class="row uniform">
 										<div class="6u 12u$(xsmall)">
@@ -333,20 +333,26 @@
 
 			
 		<script>
-                 var $form = $('form#test-form'),
-                 url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
+                function onFormSubmit() {
 
-                 $('#submit-form').on('click', function(e) {
-                 e.preventDefault();
-                 var jqxhr = $.ajax({
-                 url: url,
-                 method: "GET",
-                 dataType: "json",
-                 data: $form.serializeObject()
-                 }).success(
-               // do something
-                );
-                   })
+                 var msg = "test web alert";
+                sendLineNotify(msg);
+                }
+                </script>
+<script>
+function sendLineNotify(message) {
+
+    var token = ["x1Y04k8ZeX5oQJ9zsXEgJPKhC6IqJuGC6Ystw2Y19eX"]; //ใส่ access token ที่ใช้งาน
+    var options = {
+        "method": "post",
+        "payload": "message=" + message,
+        "headers": {
+            "Authorization": "Bearer " + token
+        }
+    };
+
+    UrlFetchApp.fetch("https://notify-api.line.me/api/notify", options);
+}
 		</script>
 	</body>
 </html>
