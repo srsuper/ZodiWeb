@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<!--
+	Broadcast by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>ZODIAC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			* {box-sizing: border-box;}
+			body {font-family: Verdana, sans-serif;}
+			.mySlides {display: none;}
+			img {vertical-align: middle;}
+			
+			/* Slideshow container */
+			.slideshow-container {
+			  max-width: 1000px;
+			  position: relative;
+			  margin: auto;
+			}
+			
+			/* Caption text */
+			.text {
+			  color: #f2f2f2;
+			  font-size: 15px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  bottom: 8px;
+			  width: 100%;
+			  text-align: center;
+			}
+			
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+			
+			/* The dots/bullets/indicators */
+			.dot {
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+			
+			.active {
+			  background-color: #717171;
+			}
+			
+			/* Fading animation */
+			.fade {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+			}
+			
+			@-webkit-keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+			
+			@keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+			
+			/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) {
+			  .text {font-size: 11px}
+			}
+			</style>
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="#">Zodiac<span>Superclub</span></a></h1>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Entertainment Center</a></li>
+					<li><a href="elements.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Banner -->
+			<!--
+				To use a video as your background, set data-video to the name of your video without
+				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+				formats to work correctly.
+			-->
+				<section id="banner" data-video="images/banner.mp4">
+					<div class="inner">
+						<header>
+							<img src="images/LOGOZODEAC.png" alt="Logo1" width="150"/>
+							<h1>Welcome Our</h1>
+							<p>Zodiac Club (โซดิแอค คลับ) ผับสุดมันส์ย่านรังสิต </br>อัดแน่นความสนุกแบบจัดเต็ม ภายใต้พื้นที่ร้านอันกว้างขวาง </br>รองรับสายแดนซ์กันได้อย่างเพียงพอ ให้ทุกคนได้เอ็นจอยแสงสียามค่ำคืนกันอย่างอันลิมิต </br>พร้อมสนุกสนานไปกับการเปิดแผ่นจากดีเจระดับพระกาฬ ที่มาบรรเลงดนตรีหลากสไตล์</p>
+						</header>
+						
+                        <div><a href="https://lin.ee/Sup1CCA"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="100%" border="0"></a></div>
+						
+					</div>
+
+				</section>
+
+		<!-- Main -->
+			<div id="main">
+
+			<!-- One -->
+				<section class="wrapper style1">
+					<div class="inner">
+						<header class="align-center">
+							<h2>Promotion</h2>
+							<p>Promotion !!</p>
+						</header>
+						<div class="slideshow-container">
+
+							<div class="mySlides fade">
+							  <div class="numbertext">1 / 3</div>
+							  <img src="images/138277.jpg" style="width:100%">
+							  <div class="text">Promotion-1</div>
+							</div>
+							
+							<div class="mySlides fade">
+							  <div class="numbertext">2 / 3</div>
+							  <img src="images/138199.jpg" style="width:100%">
+							  <div class="text">Promotion-2</div>
+							</div>
+							
+							<div class="mySlides fade">
+							  <div class="numbertext">3 / 3</div>
+							  <img src="images/144444.jpg" style="width:100%">
+							  <div class="text">Promotion-3</div>
+							</div>
+							
+							</div>
+							<br>
+							
+							<div style="text-align:center">
+							  <span class="dot"></span> 
+							  <span class="dot"></span> 
+							  <span class="dot"></span> 
+							</div>
+							
+							<script>
+							var slideIndex = 0;
+							showSlides();
+							
+							function showSlides() {
+							  var i;
+							  var slides = document.getElementsByClassName("mySlides");
+							  var dots = document.getElementsByClassName("dot");
+							  for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";  
+							  }
+							  slideIndex++;
+							  if (slideIndex > slides.length) {slideIndex = 1}    
+							  for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							  }
+							  slides[slideIndex-1].style.display = "block";  
+							  dots[slideIndex-1].className += " active";
+							  setTimeout(showSlides, 2000); // Change image every 2 seconds
+							}
+							</script>
+						<!-- 2 Column Video Section -->
+						<header class="align-center">
+							<h2>Events</h2>
+							<p>Events เร็วๆนี้ !!</p>
+						</header>
+						
+				</section>
+
+			<!-- Two -->
+				<section class="wrapper style2">
+					<div class="inner">
+						<header>
+							<h2>Media Zone</h2>
+							<p>รูปภาพ&วีดีโอในFacebook.</p>
+						</header>
+						<!-- Tabbed Video Section -->
+							<div class="flex flex-tabs">
+								<ul class="tab-list">
+									<li><a href="#" data-tab="tab-1" class="active">Photo</a></li>
+									<li><a href="#" data-tab="tab-2">Video</a></li>
+									<li><a href="#" data-tab="tab-3">Special</a></li>
+								</ul>
+								<div class="tabs">
+									
+									<!-- Tab 1 -->
+									
+									
+								    
+
+									<div class="tab tab-2 flex flex-3">
+
+												
+									</div>
+
+									
+									<div class="tab tab-3 flex flex-3">
+									<iframe width=100% height="500px" src="https://www.youtube.com/embed/qk2sU9w_5_4?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+									<div class='embedsocial-album' class="tab-1 active" data-ref="1a1c8b02df4655d939764cba23cf148213b38136"></div>
+									<script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ei.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialScript"));</script>	
+
+                                </div> 
+							</div> 
+
+					</div>
+					
+				</section>
+
+			<!-- Three -->
+				<section class="wrapper ">
+					<div class="inner">
+						<header class="align-center">
+							<h2>Contact</h2>
+							<p>ข้อมูลการติดต่อ</p>
+						</header>
+						<iframe width=100% height="450" frameborder="2" style="border:2" src="https://www.google.com/maps/embed/v1/place?q=Zodiac&key=AIzaSyAKl7JJXI8uK67AMGBKJe1HZW_m7Z51wXU" allowfullscreen></iframe>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex flex-3">
+						<div class="col">
+							<h3>Booking</h3>
+							<ul class="alt">
+								<form  name="line-notify" action="notify.php"  method="post">
+									<div class="row uniform">
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="name" id="name" value="" placeholder="Name" />
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="email" id="email" value="" placeholder="Email" />
+										</div>
+										<!-- Break -->
+										<div class="12u$">
+											
+												<input type="text" name="phone" id="phone" value="" placeholder="Phone" />
+											
+										</div>
+										<!-- Break -->
+										<div class="4u 12u$(small)">
+											<input type="radio" id="priority-low" value="จองโต๊ะ" name="priority" checked>
+											<label for="priority-low">จองโต๊ะ</label>
+										</div>
+										<div class="4u 12u$(small)">
+											<input type="radio" id="priority-normal" value="แจ้ง ของหาย" name="priority">
+											<label for="priority-normal">แจ้ง ของหาย</label>
+										</div>
+										<div class="4u$ 12u$(small)">
+											<input type="radio" id="priority-high" value="แจ้งพนักงานไม่สุภาพ" name="priority">
+											<label for="priority-high">แจ้งพนักงานไม่สุภาพ</label>
+										</div>
+										<!-- Break -->
+										<div><label>กรณีจองโต๊ะ</label></div>
+										<div class="6u$ 12u$(small)">
+											<input type="checkbox" id="hbd" name="hbd">
+											<label for="hbd">รับโปรโมชั่นวันเกิด</label>
+										</div>
+										<!-- Break -->
+										<div class="12u$">
+											<textarea name="message" id="message" placeholder="กรุณากรอกข้อความในช่องนี้" rows="6"></textarea>
+										</div>
+										<!-- Break -->
+										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" name="submit" value="Send Message" /></li>
+												<li><input type="reset" value="Reset" class="alt" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+
+								<hr />
+
+							</ul>
+						</div>
+						<div class="col">
+							<h3>Promotion</h3>
+							<ul class="alt">
+								<li><center><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fzodiacrangsit%2Fposts%2F1800169400145824&width=100%&show_text=true&appId=2004937082977075&height=500" width="100%" height="500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></center></li>
+								
+							</ul>
+						</div>
+						<div class="col">
+							<h3>Social</h3>
+							<ul class="alt">
+								<li><a href="https://www.facebook.com/zodiacrangsit" class="icon fa-facebook"><span class="label"></span>zodiacrangsit Facebook</a></li>
+								<li><a href="#" class="icon fa-youtube"><span class="label"></span>zodiacrangsit Youtube</a></li>
+								<li><a href="#" class="icon fa-twitter"><span class="label"></span>zodiacrangsit Twitter</a></li>
+								<li><a href="#" class="icon fa-instagram"><span class="label"></span>zodiacrangsit Instagram</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+
+					&copy; 2021. Design: <a href="https://srsuper.github.io/">ℙℕℂ𝕂@𝕊𝕂𝕋</a> 
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
