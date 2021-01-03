@@ -248,50 +248,8 @@
 						<div class="col">
 							<h3>Booking</h3>
 							<ul class="alt">
-								<form  action=”#" method="POST" 
-								
-									<div class="row uniform">
-										<div class="6u 12u$(xsmall)">
-										<input type="text" name="name" id="name" value="" placeholder="Name" />
-										</div>
-										<div class="6u$ 12u$(xsmall)">
-										<input type="email" name="email" id="email" value="" placeholder="Email" />
-										</div>
-										<!-- Break -->
-										<div class="12u$">
-											
-										<input type="text" name="phone" id="phone" value="" placeholder="Phone" />
-											
-										</div>
-										<!-- Break -->
-										<div class="4u 12u$(small)">
-											<input type="radio" id="priority-low" value="จองโต๊ะ" name="priority" checked>
-											<label for="priority-low">จองโต๊ะ</label>
-										</div>
-										<div class="4u 12u$(small)">
-											<input type="radio" id="priority-normal" value="แจ้ง ของหาย" name="priority-normal">
-											<label for="priority-normal">แจ้ง ของหาย</label>
-										</div>
-										<div class="4u$ 12u$(small)">
-											<input type="radio" id="priority-high" value="แจ้งพนักงานไม่สุภาพ" name="priority-high">
-											<label for="priority-high">แจ้งพนักงานไม่สุภาพ</label>
-										</div>
-										<!-- Break -->
-										<div><label>กรณีจองโต๊ะ</label></div>
-										<div class="6u$ 12u$(small)">
-											<input type="checkbox" id="hbd" value="รับโปรโมชั่นวันเกิด" name="hbd">
-											<label for="hbd">รับโปรโมชั่นวันเกิด</label>
-										</div>
-										<!-- Break -->
-										<div class="12u$">
-											<textarea name="messagetxt" id="messagetxt" placeholder="กรุณากรอกข้อความในช่องนี้" rows="6"></textarea>
-										</div>
-										<!-- Break -->
-										<div class="12u$">
-											<div><a href="https://lin.ee/Sup1CCA"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="100%" border="0"></a></div>
-										</div>
-									</div>
-								</form>
+								<h1>ขั้นตอนการจอง</h1>
+							<p>เพิ่ม้เพื่อน Line Zodiac Club ผับสุดมันส์ย่านรังสิต </br>พิมพ์ข้อความว่า จอง  </br>--ทำตามขั้นตอนต่อไป-- </br>--ทำตามขั้นตอนต่อไป--</p>
 
 								<hr />
 
@@ -328,28 +286,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-			
-		<script>
-                function onFormSubmit() {
-
-                 var msg = "test web alert";
-                sendLineNotify(msg);
-                }
-                </script>
-<script>
-function sendLineNotify(message) {
-
-    var token = ["x1Y04k8ZeX5oQJ9zsXEgJPKhC6IqJuGC6Ystw2Y19eX"]; //ใส่ access token ที่ใช้งาน
-    var options = {
-        "method": "post",
-        "payload": "message=" + message,
-        "headers": {
-            "Authorization": "Bearer " + token
-        }
-    };
-
-    UrlFetchApp.fetch("https://notify-api.line.me/api/notify", options);
-}
-		</script>
+		
 	</body>
 </html>
