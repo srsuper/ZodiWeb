@@ -248,7 +248,10 @@
 						<div class="col">
 							<h3>Booking</h3>
 							<ul class="alt">
-								<form  name="line-notify" action="notify.js"  method="post">
+								<form  action=”mailto:aot5310@gmail.com” method=”POST”
+								enctype=”multipart/form-data”
+								name=”EmailForm”>
+								
 									<div class="row uniform">
 										<div class="6u 12u$(xsmall)">
 											<input type="text" name="name" id="name" value="" placeholder="Name" />
@@ -288,7 +291,7 @@
 										<!-- Break -->
 										<div class="12u$">
 											<ul class="actions">
-												<li><input type="submit" name="submit" value="Send Message" /></li>
+												<li><input type="submit" value="Send Message" /></li>
 												<li><input type="reset" value="Reset" class="alt" /></li>
 											</ul>
 										</div>
@@ -330,5 +333,17 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			
+			<script>
+			function sendLineNotify(token,message){
+				var options =
+				{
+					  "method" : "post",
+					  "payload" : "message= " + message,
+					  "headers" : {"Authorization" : "Bearer " + token}
+				};
+				UrlFetchApp.fetch("https://notify-api.line.me/api/notify",options);
+		  }
+		</script>
 	</body>
 </html>
