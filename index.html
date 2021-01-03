@@ -248,9 +248,7 @@
 						<div class="col">
 							<h3>Booking</h3>
 							<ul class="alt">
-								<form  action=”mailto:aot5310@gmail.com” method=”POST”
-								enctype=”multipart/form-data”
-								name=”EmailForm”>
+								<form  id="test-form" method=”POST” >
 								
 									<div class="row uniform">
 										<div class="6u 12u$(xsmall)">
@@ -291,7 +289,7 @@
 										<!-- Break -->
 										<div class="12u$">
 											<ul class="actions">
-												<li><input type="submit" value="Send Message" /></li>
+												<li><input type="submit"id="submit-form" /></li>
 												<li><input type="reset" value="Reset" class="alt" /></li>
 											</ul>
 										</div>
@@ -334,16 +332,21 @@
 			<script src="assets/js/main.js"></script>
 
 			
-			<script>
-			function sendLineNotify(token,message){
-				var options =
-				{
-					  "method" : "post",
-					  "payload" : "message= " + message,
-					  "headers" : {"Authorization" : "Bearer " + token}
-				};
-				UrlFetchApp.fetch("https://notify-api.line.me/api/notify",options);
-		  }
+		<script>
+                 var $form = $('form#test-form'),
+                 url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
+
+                 $('#submit-form').on('click', function(e) {
+                 e.preventDefault();
+                 var jqxhr = $.ajax({
+                 url: url,
+                 method: "GET",
+                 dataType: "json",
+                 data: $form.serializeObject()
+                 }).success(
+               // do something
+                );
+                   })
 		</script>
 	</body>
 </html>
